@@ -43,7 +43,10 @@
         <tbody>
           <tr>
             <td><!--画像入れるとこ--></td>
-            <td><%= @book.title %></td>
+            <td><%= link_to book_path(@book.id) do %>
+                  <%= @book.title %>
+                <% end %>
+            </td>
             <td><%= @book.body %></td>
           </tr>
         </tbody>
