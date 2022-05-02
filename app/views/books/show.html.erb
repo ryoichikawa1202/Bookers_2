@@ -4,7 +4,20 @@
 
     </div>
     <div class="col-md-8 offset-md-1">
-
+      <h2>Book detail</h2>
+      <table class="table">
+        <tbody>
+          <tr>
+            <td><!--画像入れるとこ--></td>
+            <td>
+              <%= link_to book_path(book.id) do %>
+                <%= @book.title %>
+              <% end %>
+            </td>
+            <td><%= @book.body %></td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div>
 </div>
