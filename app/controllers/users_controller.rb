@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
   def index
+    @users = User.all
   end
 
   def show
@@ -7,7 +8,7 @@ class UsersController < ApplicationController
 
   def edit
   end
-  
+
   def update
   end
 end
